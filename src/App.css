@@ -1,0 +1,125 @@
+/* Import Google Fonts and Font Awesome for icons */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: whitesmoke;
+  color: #333;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.profile-header {
+  background-image: url('./components/photo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.profile-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for text contrast */
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.profile-header h1, .profile-header p {
+  position: relative;
+  z-index: 2;
+}
+
+.college-logo {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 20px;
+}
+
+h3 {
+  font-weight: 600;
+  color: #444;
+}
+
+.location, .contact {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: #fff;
+}
+
+.card {
+  margin-top: 20px;
+  border: none;
+  background: linear-gradient(120deg, #ffffff 0%, #f9f9f9 50%, #eaeaea 100%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-body h3 {
+  color: #333;
+  text-align: center;
+}
+
+.course-item, .department-item, .faculty-item {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0e0a0;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.course-item i, .department-item i, .faculty-item i {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+.course-item:hover, .department-item:hover, .faculty-item:hover {
+  background-color: #8a8a7e;
+  color: #007bff;
+}
+
+.animate__animated {
+  animation-duration: 1.5s;
+}
+
+/* Add gradient to the container for a modern effect */
+.container {
+  background: #fff6b6;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhance the hover effect for a smoother feel */
+.card:hover .course-item, .card:hover .department-item, .card:hover .faculty-item {
+  color: #444;
+  background-color: #f1f4f9;
+}
+
